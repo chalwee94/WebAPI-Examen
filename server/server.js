@@ -2,20 +2,22 @@ import express from "express";
 import path from "path";
 import bodyParser from "body-parser";
 
+
 const app = express();
 app.use(bodyParser.json());
 
 const movies = [
+
     {
-        title: "ma famille",
-        plot: " ma famille est un film qui ete Créée en juin 20021 par Akissi Delta, la série fut produite par Lad Production, et est diffusée sur La Première, Africable, la télévision Gabonaise, RTGA.",
-        year: 2002
+        title: "when they see us ",
+        plot: "Is your favorite movies ??",
+        year: 2019
     },
     {
-        title: "when they see us",
-        plot: "Fem tenåringer fra Harlem blir fanget i et mareritt når de feilaktig anklages for et brutalt angrep i Central Park. Basert på en sann historie. ",
-        year: 1985
-    }
+        title: "ma family is famous serie in ivory coast",
+        plot: "I thin is a favoritt people serie in africa",
+        year: 2002
+    },
 ]
 
 app.get("/api/movies", (req, res) => {
@@ -35,6 +37,6 @@ app.use((req, res) => {
 })
 
 
-const server = app.listen(process.env.PORT || 2323, () => {
+const server = app.listen(process.env.PORT || 3000, () => {
     console.log("Started on http://localhost:" + server.address().port);
 })
