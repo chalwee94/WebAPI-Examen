@@ -4,7 +4,7 @@ import {BrowserRouter, Link, Route, Routes, useNavigate} from "react-router-dom"
 
 function FrontPage() {
     return <div>
-        <h1>my first react movie </h1>
+        <h1>my first react movie project</h1>
         <ul>
             <li><Link to={"/movies"}>List existing movies</Link></li>
             <li><Link to={"/movies/new"}>Add new movie</Link></li>
@@ -74,8 +74,7 @@ function Movies() {
             plot: "I thin is a favoritt people serie in africa",
             year: 2002
 
-
-    }]);
+}]);
 
     function handleAddMovie(newMovie) {
         setMovies(oldValue => [...oldValue, newMovie])

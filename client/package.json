@@ -4,10 +4,10 @@
   "description": "",
   "scripts": {
     "test": "jest",
-    "dev": "parcel  index.html",
+    "dev": "parcel watch index.html",
     "build": "npm install --include=dev && npm run build:parcel",
-    "build:parcel": "parcel build index.html",
-    "clean": "rimraf dist .parcel-cache"
+    "build:parcel": "parcel build index.html"
+
   },
   "keywords": [],
   "author": "",
@@ -26,13 +26,17 @@
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0"
   },
-  "babel": {
+
+  "babel":{
     "presets": [
       "@babel/preset-env",
       "@babel/preset-react"
-    ],
-    "jest": {
-      "testEnvironment": "jsdom"
-    }
+    ]
+  },
+
+  "jest": {
+    "testEnvironment": "jsdom"
   }
 }
+
+

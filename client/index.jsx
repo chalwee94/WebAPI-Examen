@@ -5,7 +5,3 @@ import {MoviesApplication} from "./MoviesApplication";
 ReactDOM.render(<MoviesApplication/>, document.getElementById("app"));
 
 
-
-
-
-
